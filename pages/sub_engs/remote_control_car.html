@@ -1,1 +1,263 @@
-https://github.com/yenchiah/project-website-template
+<!--
+  NavBar: About Me, Expierence, Engineering Projects, Meaningful Interests, Contact Me
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Justin Sapun Engineering Projects
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
+
+  <link href="../../assets/css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="landing-page sidebar-collapse">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="300">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="../../index.html">
+          Home
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="../engineering_projects.html" class="nav-link"><i class="nc-icon nc-settings-gear-65"></i>Engineering Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="../meaningful_interests.html" class="nav-link"><i class="nc-icon nc-globe-2"></i> Meaningful Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#contact"><i class="nc-icon nc-circle-10"></i> Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Connect on LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/justinsapun/" target="_blank">
+              <i class="fa fa-linkedin-square"></i>
+              <p class="d-lg-none">LinkedIn</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Explore my GitHub" data-placement="bottom" href="https://github.com/JSapun" target="_blank">
+              <i class="fa fa-github-square"></i>
+              <p class="d-lg-none">GitHub</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Background Photo/Title -->
+  <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('../../assets/img/rear.jpg');">
+    <div class="filter"></div>
+    <div class="container">
+        <div class="motto text-center">
+          <h1>Remote Control Car</h1>
+        </div>
+      </div>
+  </div>
+  <!-- End Background Photo/Title -->
+  
+  <div class="content">
+    <div class="content-table flex-column">
+    <!--Start Intro-->
+        <div class="flex-row">
+            <div class="flex-item flex-column">
+                <img class="image" src="../../assets/img/me.jpg">
+            </div>
+            <div class="flex-item flex-column">
+                <p class="text text-large bolder">
+                <a target="_blank" href="https://justinsapun.com">Justin Sapun</a>, justin.sapun@dartmouth.edu<br>
+                <a target="_blank" href="https://github.com/Tozturk18">Tuna</a>,  @dartmouth.edu<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="flex-row">
+            <div class="flex-item flex-column">
+                <h5 class="text add-top-margin-large bolder">
+                 The goal of this project was to design a remote control car using embedded systems programming in C. 
+                Although the initial product used an HTTP protocol for Adafruit's wireless dashboard, we switched to 
+                wireless transceivers to reduce response time to user input and create a separate controller that 
+                doesn't require an internet connection. A fair bit of electronics knowledge was required as well.</h5>
+
+                <h3 class="bolder"> Hardware Components</h3>
+                <ul>
+                    <li><p class="bolder">Arduino Uno (ATmega328p)</p></li>
+                    <li><p class="bolder">Adafruit airlift shield</p></li>
+                    <li><p class="bolder">2 transceivers (nrf24l01)</p></li>
+                    <li><p class="bolder">2 - 9V DC motors</p></li>
+                    <li><p class="bolder">Adafruit TB6612 DC Motor Driver (Toshiba TB6612FNG)</p></li>
+                    <li><p class="bolder">Linear voltage regulator LM7805</p></li>
+                    <li><p class="bolder">2 - white LEDs</p></li>
+                    <li><p class="bolder">2 - 4 digit 7segment displays with Adafruit LED Driver (Heltec HT16K33)</p></li>
+                    <li><p class="bolder">2 - 0.22uF capacitors</p></li>
+                    <li><p class="bolder">0.1 uF capacitor</p></li>
+                    <li><p class="bolder">2 - 9V batteries wired in series</p></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text Only-->
+        <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="bolder" id="introduction">Introduction</h2>
+              <hr>
+              <p class="text bolder">
+                The car itself isn’t the highlight of the project, but the remote operation of it. As such, 
+                the car was assembled from a rough compilation of laser cutouts. The steering was handled in 
+                software as the car had independent motors for the rear axles, thus, giving us the option to 
+                only use one front wheel and no steering rack. The batteries were wired in series to give more 
+                current to the motors and prevent the Atmega chip from browning out. We included 3 de-coupling 
+                capacitors across 9V and ground, the linear voltage regulator, and the TB6612 to protect the ICs 
+                from noise that may affect their performance. We used a linear voltage regulator to supply a steady 
+                voltage to the motors simultaneously. The TB6612 utilizes the H-bridge circuit enabling us 
+                bidirectional motor driving. Our first implementation utilizes the Adafruit Airlift shield to 
+                communicate via WiFi to the Adafruit Internet of Things Dashboard service. Our second implementation 
+                utilizes transceivers on the car and on a separate controller to communicate via the 2.4 GHz band. 
+                For fun, we included headlights (white LEDs) and taillights (SevenSeg Displays).
+              </p>
+              <p class="text bolder">
+                This project required us to study datasheets, create drivers, develop wireless communications protocols, 
+                and finally construct a driving operation.  The project source code can be found on 
+                <a class="break-long-url" target="_blank" href="https://github.com/JSapun/ENGS28_Car">Github.</a>
+              </p>
+            </div>
+          </div>
+          <!--End Text with Buttons-->
+          <!-------------------------------------------------------------------------------------------->
+          <!--Start Text with Images and Videos-->
+  
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="bolder" id="implementation"> Implementation</h2>
+              <hr>
+              <p class="text bolder">
+                Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+                coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+                It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+                simplificat Angles, quam un skeptic Cambridge amico dit me.
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-item flex-item-stretch flex-column">
+              <video preload controls autoplay loop muted playsinline class="image">
+                <source src="../../assets/vids/lookaround.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="flex-item flex-item-stretch flex-column">
+              <p class="text bolder">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                magnam.
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-item flex-item-stretch flex-column">
+              <video preload controls autoplay loop muted playsinline class="image">
+                <source src="../../assets/vids/demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="flex-item flex-item-stretch flex-column">
+              <p class="text bolder">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                magnam.
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <p class="text bolder">
+                Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
+                coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+                It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
+                simplificat Angles, quam un skeptic Cambridge amico dit me.
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-item flex-item-stretch-2 flex-column">
+              <p class="text bolder">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+  <!--Foot Section-->
+  <footer class="footer   footer-white ">
+    <div class="container">
+      <div class="row">
+        <div class="credits ml-auto">
+          <span class="copyright">
+            ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, Justin Sapun
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!--   Core JS Files   -->
+  <script src="../../assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="../../assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="../../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="../../assets/js/plugins/moment.min.js"></script>
+  <script src="../../assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+  <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+  <script src="../../assets/js/paper-kit.js?v=2.2.0" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+</body>
+</html>
