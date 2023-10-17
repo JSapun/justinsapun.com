@@ -1,7 +1,3 @@
-<!--
-  NavBar: About Me, Expierence, Engineering Projects, Meaningful Interests, Contact Me
--->
-
 
 <!DOCTYPE html>
 
@@ -16,14 +12,13 @@
     Justin Sapun Engineering Projects
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
+  <!-- Fonts and icons -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   <!-- CSS Files -->
   <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../../assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
-
-  <link href="../../assets/css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../../assets/css/frame.css" media="screen" rel="stylesheet" type="text/css" /> <!-- Projects CSS -->
 </head>
 
 <body class="landing-page sidebar-collapse">
@@ -82,9 +77,10 @@
   </div>
   <!-- End Background Photo/Title -->
   
+  <!-- Main -->
   <div class="content">
     <div class="content-table flex-column">
-    <!--Start Intro-->
+        <!-- Authors -->
         <div class="flex-row">
             <div class="flex-item flex-column">
                 <img class="image" src="../../assets/img/me.jpg">
@@ -96,7 +92,8 @@
                 </p>
             </div>
         </div>
-
+        <!-- End Authors -->
+        <!-- Summary/Components -->
         <div class="flex-row">
             <div class="flex-item flex-column">
                 <h5 class="text add-top-margin-large bolder">
@@ -108,23 +105,21 @@
                 <h3 class="bolder"> Hardware Components</h3>
                 <ul>
                     <li><p class="bolder">Arduino Uno (ATmega328p)</p></li>
-                    <li><p class="bolder">Adafruit airlift shield</p></li>
+                    <li><p class="bolder">Adafruit Airlift Shield (esp32)</p></li>
                     <li><p class="bolder">2 transceivers (nrf24l01)</p></li>
                     <li><p class="bolder">2 - 9V DC motors</p></li>
-                    <li><p class="bolder">Adafruit TB6612 DC Motor Driver (Toshiba TB6612FNG)</p></li>
-                    <li><p class="bolder">Linear voltage regulator LM7805</p></li>
+                    <li><p class="bolder">Adafruit DC motor breakout (Toshiba tb6612)</p></li>
+                    <li><p class="bolder">Linear voltage regulator (lm7805)</p></li>
                     <li><p class="bolder">2 - white LEDs</p></li>
-                    <li><p class="bolder">2 - 4 digit 7segment displays with Adafruit LED Driver (Heltec HT16K33)</p></li>
+                    <li><p class="bolder">2 - 4 digit 7segment displays with Adafruit LED breakout (Heltec ht16k33)</p></li>
                     <li><p class="bolder">2 - 0.22uF capacitors</p></li>
                     <li><p class="bolder">0.1 uF capacitor</p></li>
                     <li><p class="bolder">2 - 9V batteries wired in series</p></li>
                 </ul>
             </div>
         </div>
-
-        <!--End Intro-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text Only-->
+        <!-- End Summary/Components -->
+        <!-- Introduction -->
         <div class="flex-row">
             <div class="flex-item flex-column">
               <h2 class="bolder" id="introduction">Introduction</h2>
@@ -146,41 +141,41 @@
               <p class="text bolder">
                 This project required us to study datasheets, create drivers, develop wireless communications protocols, 
                 and finally construct a driving operation.  The project source code can be found on 
-                <a class="break-long-url" target="_blank" href="https://github.com/JSapun/ENGS28_Car">Github.</a>
+                <a class="break-long-url" target="_blank" href="https://github.com/JSapun/ENGS28_Car"><b>Github</b>.</a>
               </p>
             </div>
           </div>
-          <!--End Text with Buttons-->
-          <!-------------------------------------------------------------------------------------------->
-          <!--Start Text with Images and Videos-->
-  
+          <!-- End Introduduction -->
+          <!-- Implementation -->
           <div class="flex-row">
             <div class="flex-item flex-column">
               <h2 class="bolder" id="implementation"> Implementation</h2>
               <hr>
               <p class="text bolder">
-                Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-                coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-                It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-                simplificat Angles, quam un skeptic Cambridge amico dit me.
+                We began by producing the necessary drivers for the following: tb6612, ht16k33, esp32, serial comm, 
+                and I2C comm. Building these drivers provided us with a standardized interface for software to access 
+                and control the hardware components while making the main code easily understandable. Note that to 
+                connect to Adafruit's Internet of Things, you need the network SSID and password, along with your own 
+                Adafruit account login. We used the Rest API over HTTP (the same protocol as regular web access). 
+                The framework consisted of HTML parsing for a single value from the Adafruit service. 
               </p>
             </div>
           </div>
           <div class="flex-row">
             <div class="flex-item flex-item-stretch flex-column">
-              <video preload controls autoplay loop muted playsinline class="image">
-                <source src="../../assets/vids/lookaround.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+              <div class="flex-item flex-item-stretch flex-column">
+                <img class="image" src="../../assets/img/colorpicker.jpg">
+              </div>
             </div>
             <div class="flex-item flex-item-stretch flex-column">
               <p class="text bolder">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                magnam.
+                As our protocol only allowed for a single 32-bit value, we had to figure out a way to query a combination of 
+                two variables: speed and direction. During our initial design stage, we wanted to replicate a joystick to simulate 
+                the forward, reverse, and side-to-side motion. The closet controller we could find on Adafruit's dashboard was a 
+                color picker. We realized this would work with our protocol constraint, as we could export the color as a single 
+                value. Now in order to operate the car, the color would need to be set to “|||||||||” to zero the initial 
+                components of the blue and green hues. Once this is done on the dashboard, the color wheel will replicate a 
+                joystick and the two variables will be represented by the blue and green color components.
               </p>
             </div>
           </div>
@@ -193,40 +188,46 @@
             </div>
             <div class="flex-item flex-item-stretch flex-column">
               <p class="text bolder">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                magnam.
+                The video to the left is a quick demonstration of the car's functionality. As you can see we start by resetting the 
+                color wheel and then begin by increasing the car's speed in the forward direction. Ideally, the car should continue 
+                straight but that is not the case. We have concluded that because we used timer 0 and timer 2 onboard the atmega328p 
+                chip with different prescalers, the motors were not in sync when using PWM. As a result, we corrected this error in 
+                later developments by creating an offset. For the most part, the car still functioned as intended, able to operate 
+                remotely, turning left and right, or going in reverse. Note that we even included brake lights when the speed has been 
+                decreased. However, one thing we noticed right away was the 1 second delay from the Adafruit query.
               </p>
             </div>
           </div>
           <div class="flex-row">
             <div class="flex-item flex-column">
               <p class="text bolder">
-                Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-                coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-                It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-                simplificat Angles, quam un skeptic Cambridge amico dit me.
+                To combat this issue, our next implementation was constructed using wireless communication on the 2.4GHz band using 
+                nrf24l01 transceivers. We built the driver in C and noticed the difference immediately. In addition, there was no single 
+                value constraint as we were able to send 8-bit arrays efficiently. Although we didn't have a joystick, this allowed the 
+                use of two potentiometers to signal speed and direction.
               </p>
             </div>
           </div>
+          <!-- End Implementation -->
+          <!-- Skills -->
           <div class="flex-row">
-            <div class="flex-item flex-item-stretch-2 flex-column">
+            <div class="flex-item flex-column">
+              <h2 class="bolder" id="skills">Skills</h2>
+              <hr>
               <p class="text bolder">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.
+                This project equipped me with the ability to create drivers for hardware components, program in embedded C, 
+                understand and implement basic electronics and circuitry, and develop comprehensive embedded systems. These 
+                skills empower me to create efficient and customized solutions for various applications in the field of embedded 
+                systems engineering.
               </p>
             </div>
           </div>
+          <!-- End Skills -->
         </div>
     </div>
+    <!-- End Main -->
 
-
+    
   <!--Foot Section-->
   <footer class="footer   footer-white ">
     <div class="container">
