@@ -125,7 +125,7 @@
               <h2 class="bolder" id="introduction">Introduction</h2>
               <hr>
               <p class="text bolder">
-                The car itself isn’t the highlight of the project, but the remote operation of it. As such, 
+                The car itself isn't the highlight of the project, but the remote operation of it. As such, 
                 the car was assembled from a rough compilation of laser cutouts. The steering was handled in 
                 software as the car had independent motors for the rear axles, thus, giving us the option to 
                 only use one front wheel and no steering rack. The batteries were wired in series to give more 
@@ -190,7 +190,7 @@
               <p class="text bolder">
                 The video to the left is a quick demonstration of the car's functionality. As you can see we start by resetting the 
                 color wheel and then begin by increasing the car's speed in the forward direction. Ideally, the car should continue 
-                straight but that is not the case. We have concluded that because we used timer 0 and timer 2 onboard the atmega328p 
+                straight but that is not the case. We have concluded that because we used timer 1 and timer 2 onboard the atmega328p 
                 chip with different prescalers, the motors were not in sync when using PWM. As a result, we corrected this error in 
                 later developments by creating an offset. For the most part, the car still functioned as intended, able to operate 
                 remotely, turning left and right, or going in reverse. Note that we even included brake lights when the speed has been 
