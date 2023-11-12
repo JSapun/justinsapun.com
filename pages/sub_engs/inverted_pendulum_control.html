@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Justin Sapun Engineering Projects
+    Justin Sapun Inverted Pendulum
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!-- Fonts and icons -->
@@ -99,45 +99,35 @@
         <div class="flex-row">
             <div class="flex-item flex-column">
                 <h5 class="text add-top-margin-large bolder">
-                The goal of this project was to design a game for users to learn and practice morse code. We used a Basys 3 as
-                our field programmable gate array. The intial design was split into two projects, the morse decoding logic and 
-                the vga display logic. Once each sub system was working, we worked on combining them. The game consisted of revealing
-                a letter on a moniter, which the user would attempt to press the button in morse code for the letter. If the input was
-                correct, the letter would turn green and reveal a new letter. If the input was wrong, the letter would turn red and prompt
-                another attempt. There is a reset button to skip a letter and move on. Additionally, there is a speaker componenet to give 
-                audible feedback to users.
+                  The overall objective of this project was to balance an inverted pendulum (stick) with a control system onboard 
+                  an electric car. The main focus of this project is the control system developed, implemented, and tested. The 
+                  electric car was built using a basic DC motor, Li-ion batteries, and a belt drive. The control system required 
+                  us to utilize a position sensor for the stick as feedback, an error detector, and a compensator that would send 
+                  the amplified error signal to the car drivetrain. In our design, we set system specifications that would 
+                  ultimately lead us to construct a PID controller.
                 </h5>
-                <h3 class="bolder"> Hardware Components</h3>
-                <ul>
-                    <li><p class="bolder">FPGA (Basys 3)</p></li>
-                    <li><p class="bolder">Small Speaker (with Amplifier)</p></li>
-                    <li><p class="bolder">Display Moniter (with VGA)</p></li>
-                </ul>
             </div>
         </div>
         <!-- End Summary/Components -->
-        <!-- Introduction -->
-        <div class="button-center">
-          <a href="google.com" class="btn btn-outline-neutral btn-round" target="_blank">Github</a>
-        </div>
+        <!-- Implementation -->
         <div class="flex-row">
             <div class="flex-item flex-column">
               <h2 class="bolder" id="implementation">Implementation</h2>
               <hr>
               <p class="text bolder">
-                The project was initially developed on paper, with hand-drawn schematics for the datapath and finite state machine. 
-                There were numerous developments during the initial weeks, leading to the discovery of more efficient methods for 
-                interpreting long and short button presses. We mapped all Morse Code letter combinations to ASCII values in memory, 
-                making comparisons and sending results to the VGA logic straightforward. The display logic used bitmaps to 
-                individually showcase random letters and would update accordingly. We fine-tuned a time variable to adjust the 
-                duration of short presses, long presses, and spacing. While we were aware that hardware programming, even for 
-                relatively simple projects, could be tedious, we were confident in our ability to accomplish the task. Overall, 
-                the results were a resounding success.
+                We initiated the project by crafting a comprehensive system model and drawing a closed-loop block diagram 
+                encompassing various transfer functions. Opting for a PID compensator, our goal was to minimize peak 
+                overshoot in the system response. Subsequently, we characterized the sensor, motor/car, and the force-to-angle 
+                relationship. Leveraging Matlab’s SISOTOOL in the control system designer, we determined fundamental 
+                controller parameters in line with our specifications. The ensuing step involved constructing the controller 
+                transfer function, which could be used to calculate resistor and capacitor values for hardware implementation. 
+                Testing, analysis, and tuning ensued until the control system achieved the desired operational efficiency. 
+                The complete report is accessible below.
               </p>
               <br />
 
               <div class="button-center">
-                <button type="button" onclick="location.href='../documents/26_final_project_report.pdf';" class="btn btn-outline-default btn-round">Full Report</button>
+                <button type="button" onclick="window.open('../documents/26_final_project_report.pdf', '_blank');" class="btn btn-outline-default btn-round">Full Report</button>
               </div>
               <br />
             </div>
@@ -151,26 +141,27 @@
             </div>
             <div class="flex-item flex-item-stretch flex-column">
               <p class="text bolder">
-                In the left video demonstration, we began by turning on the game using the game_en switch and enabling the 
-                seven-segment display via the seven_seg switch for system operation checks, if desired. Then, a letter appeared
-                on the screen, prompting the user to start the game. The center button was used for Morse code input. We 
-                intentionally failed the first attempt to demonstrate the system's reaction (indicated by red). Upon correctly 
-                entering the Morse code, a green indicator appeared, and a new letter was displayed. If a user was stuck on a 
-                letter, they could press the top (reset) button to skip. In the video, a buzzer sound accompanied each button 
-                press, providing an audible cue that sometimes aided in adjusting to the timing.
+                In the video demonstration, the car is already operational and stabilizing the stick. Once the stick receives 
+                an external force, the car reacts quickly, showcasing how responsive the PID controller can be as it reduces 
+                the error, eliminates steady-state error, and minimizes oscillations. In the video, we can see the car 
+                overshoot slightly, so changes can be made to tune the derivative component of the PID controller, which 
+                anticipates future system responses by considering the rate of change of the error signal. Towards the end 
+                of the video, we can see the car trying to return to its original position.
               </p>
             </div>
           </div>
+          <!-- End Implementation -->
           <!-- Skills -->
           <div class="flex-row">
             <div class="flex-item flex-column">
               <h2 class="bolder" id="skills">Skills</h2>
               <hr>
               <p class="text bolder">
-                This project developed my design ability in signal processing utilizing datapaths and finite state machines. 
-                Furthermore, I became proficient in hardware programming with VHDL and the Vivado environment. These 
-                capabilities enable me to engineer effective digital systems, contributing to real-world projects and 
-                applications in the field of digital electronics.
+                While designing and building an inverted pendulum car with a PID controller, I gained expertise in dynamic 
+                modeling, sensor integration, and PID tuning. The experience honed my skills in system controller design, 
+                hardware integration, and time/frequency domain system response analysis. Furthermore, troubleshooting and 
+                fine-tuning the PID component parameters provided practical insights into system optimization, contributing 
+                to a skill set in autonomous systems and control engineering.
               </p>
             </div>
           </div>
