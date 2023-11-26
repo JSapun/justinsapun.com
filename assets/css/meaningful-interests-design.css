@@ -1,0 +1,61 @@
+.container{position:relative;max-width:1200px;margin:0 auto}
+.container:before,.container:after{display:block;content:'';clear:both;height:0}
+.common-section{padding-top:100px;width:100%;margin:0 0;clear:both}
+
+h1,h2,h3,h4,h5,h6{font-weight:400}h1{color:#ecf0f1;font-size:60px;font-family:Georgia,Times,"Times New Roman",serif}h2{font-family:Georgia,Times,"Times New Roman",serif;font-size:40px}h3{font-size:30px}h4{font-size:20px}h5{font-size:18px}p{font-size:18px}li p{font-family:Georgia,Times,"Times New Roman",serif;font-style:italic}
+
+/*Background Image Section*/
+.home-section{position:relative;width:100%;overflow:hidden}
+.home-section:after{content:"";position:absolute;left:0;bottom:0;display:block;width:100%;height:0;clear:both;-webkit-box-shadow:0 0 2px 1px #2c3e50;box-shadow:0 0 2px 1px #2c3e50}
+.home-section__bg_skiPatrol{position:absolute;min-width:100%;min-height:100%;z-index:0;background:url(../img/skiPatrolHeader.jpg) center 0 no-repeat;background-attachment:fixed;background-size:cover}
+.home-section__bg_woodworking{position:absolute;min-width:100%;min-height:100%;z-index:0;background:url(../img/coping_saw.jpg) center 0 no-repeat;background-attachment:fixed;background-size:cover}
+.home-section__overlay{position:relative;width:100%;height:100%;min-height:100%;background-color:transparent;background-color:rgba(44,62,80,.3);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);zoom:1;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABSCAABFVgAADqXAAAXb9daH5AAAAAZSURBVHjaYmCAAGM0GjfHGEMGAAAA//8DACm0ATMe8beGAAAAAElFTkSuQmCC);background-repeat:repeat;background-attachment:fixed}
+.home-section__header{padding:200px 10px 400px;text-align:left}
+.home-section__header h1{margin-bottom:10px;font-size:100px;text-shadow:1px 1px 1px #2c3e50}
+.home-section__header h2{color:#ecf0f1;font-family:'Open Sans Condensed';text-shadow:1px 1px 2px #2c3e50}
+
+/*About Me Section*/
+.about-section{position:relative;margin-top:-200px}
+.about-card{-webkit-box-shadow:2px 2px 4px -2px #2c3e50;box-shadow:2px 2px 4px -2px #2c3e50;float:left;width:73%;width:calc(75% - 40px);margin-left:1%;margin-right:1%;margin-left:calc(20px);margin-right:calc(20px);height:auto;margin-top:0;margin-bottom:0;float:right}
+.about-card__header{padding:20px;background-color:#ffa726}
+.about-card__header h2,.about-card__header h4{color:#ecf0f1}
+.about-card__info{padding:20px;background-color:#ecf0f1}
+.about-card__info p{font-weight:lighter}
+.about-card__info blockquote p{margin:20px 0 20px 20px;font-family:Georgia,Times,"Times New Roman",serif;font-style:italic}
+.about-card__info .about-card__info-status{margin-top:20px;padding-top:10px;font-weight:400;border-top:1px dashed #bdc3c7}
+.about-card__info .about-card__info-status span{font-weight:700;text-transform:uppercase}
+
+/*Choose Me Section (Orange Box)*/
+.advantages{text-align:center;border-left:10px solid #ffa726;border-right:10px solid #ffa726;float:left;width:98%;width:calc(100% - 40px);margin-left:1%;margin-right:1%;margin-left:calc(20px);margin-right:calc(20px);height:auto;margin-top:0;margin-bottom:0;margin-top:50px}
+.advantages h2{position:relative;margin-top:-15px}
+.advantages h2:before,.advantages h2:after{content:"";position:absolute;top:15px;display:block;width:30%;height:10px;background-color:#ffa726}
+.advantages h2:before{left:0}
+.advantages h2:after{right:0}
+.advantages blockquote{padding:40px 0;border-bottom:10px solid #ffa726}
+.advantages blockquote p,.advantages blockquote cite{display:inline-block;width:80%;margin:0 auto}
+.advantages blockquote p{margin-bottom:20px;font-weight:lighter;font-size:25px}
+.advantages blockquote cite{font-size:30px}
+.advantages h2:before,.advantages h2:after{width:25%}.advantages blockquote p{font-size:20px}
+.advantages blockquote cite{font-size:25px}
+
+/*Projects Section*/
+.common-section{padding-top:100px;width:100%;margin:0 0;clear:both}
+.common-section:before,.common-section:after{display:block;content:'';clear:both;height:0}
+.common-section__header{padding-bottom:50px;text-align:center;float:left;width:98%;width:calc(100% - 40px);margin-left:1%;margin-right:1%;margin-left:calc(20px);margin-right:calc(20px);height:auto;margin-top:0;margin-bottom:0}
+.common-section__header{padding-bottom:30px}h1{font-size:50px}h2{font-size:30px}h3{font-size:20px}h5{font-size:16px}p{font-size:16px}
+
+.projects-wrap{position:relative;width:100%;clear:both;overflow:hidden}
+.projects-wrap:before,.projects-wrap:after{content:"";position:absolute;left:0;z-index:10;display:block;width:100%;height:0;clear:both}
+.projects-wrap:before{top:0;-webkit-box-shadow:0 0 2px 1px #2c3e50;box-shadow:0 0 2px 1px #2c3e50}
+.projects-wrap:after{bottom:0;-webkit-box-shadow:0 0 2px 1px #2c3e50;box-shadow:0 0 2px 1px #2c3e50}
+.projects{float:left;width:100%;margin-left:0;margin-right:0;height:auto;margin-top:0;margin-bottom:0}
+.projects__item{float:left;width:25%;margin-left:0;margin-right:0;height:auto;margin-top:0;margin-bottom:0;position:relative;height:0;padding-bottom:18.75%;overflow:hidden}
+.projects__item img{position:absolute;top:0;right:0;left:0;display:block;width:100%;margin:0}
+.projects__item figcaption{position:absolute;top:0;left:0;display:block;width:100%;height:100%;text-align:center;white-space:nowrap;background-color:#ecf0f1;background-color:rgba(236,240,241,.9);visibility:hidden;opacity:0;-webkit-transition:opacity .5s;-o-transition:opacity .5s;transition:opacity .5s}
+.projects__item figcaption:after{content:"";display:inline-block;width:0;height:100%;vertical-align:middle}
+.projects__item figcaption a{display:inline-block;width:90%;font-size:25px;color:#ffa726;vertical-align:middle;white-space:normal;border-bottom:none}
+.projects__item figcaption a:before{margin-right:5px;font-size:20px}
+.projects__item:hover figcaption{visibility:visible;opacity:1}
+
+@media screen and (max-width:480px){.advantages h2:before,.advantages h2:after{width:10%}.process__step-icon{width:120px;height:120px;margin-left:-60px}.process__step-icon:before{font-size:60px;line-height:120px}.process__step-info{top:120px}.projects__item{float:left;width:100%;margin-left:0;margin-right:0;height:auto;margin-top:0;margin-bottom:0;padding-bottom:75%}}
+
