@@ -5,3 +5,6 @@ Contact Form:
 script: https://script.google.com/macros/s/AKfycbwLtPasFNsfFeYHd0FeNs-3zv-c3OW4Ez4jMY0JCuB1JieYb8noPpe9FW2jmZPisulk/exec
 script ID: 1IT3Prv0Ts9ysF9Z4goK2QteiHWi7spRiOskV-dji4ShpHrg3F36H8t_t
 script spreadsheet: https://docs.google.com/spreadsheets/d/1E3LVoRm3uQc-BGofWyZmAxxsjjokpVOqClivc_PKIFs/edit#gid=0
+
+bootstrap image size: 430:270
+meaningful interest image size: 800x600

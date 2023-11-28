@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5,h6{font-weight:400}h1{color:#ecf0f1;font-size:60px;font-family:Ge
 .home-section{position:relative;width:100%;overflow:hidden}
 .home-section:after{content:"";position:absolute;left:0;bottom:0;display:block;width:100%;height:0;clear:both;-webkit-box-shadow:0 0 2px 1px #2c3e50;box-shadow:0 0 2px 1px #2c3e50}
 .home-section__bg_skiPatrol{position:absolute;min-width:100%;min-height:100%;z-index:0;background:url(../img/skiPatrolHeader.jpg) center 0 no-repeat;background-attachment:fixed;background-size:cover}
-.home-section__bg_woodworking{position:absolute;min-width:100%;min-height:100%;z-index:0;background:url(../img/coping_saw.jpg) center 0 no-repeat;background-attachment:fixed;background-size:cover}
+.home-section__bg_woodworking{position:absolute;min-width:100%;min-height:100%;z-index:0;background:url(../img/woodworking_header.JPG) center 0 no-repeat;background-attachment:fixed;background-size:cover}
 .home-section__overlay{position:relative;width:100%;height:100%;min-height:100%;background-color:transparent;background-color:rgba(44,62,80,.3);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);zoom:1;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABSCAABFVgAADqXAAAXb9daH5AAAAAZSURBVHjaYmCAAGM0GjfHGEMGAAAA//8DACm0ATMe8beGAAAAAElFTkSuQmCC);background-repeat:repeat;background-attachment:fixed}
 .home-section__header{padding:200px 10px 400px;text-align:left}
 .home-section__header h1{margin-bottom:10px;font-size:100px;text-shadow:1px 1px 1px #2c3e50}
