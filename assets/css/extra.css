@@ -5,3 +5,16 @@
     justify-content: center;
     /* text-align: center; ~ non-flex solution */
   }
+
+.galleryButton{
+  position:absolute;
+  right:15%;
+  bottom:10px;
+  left:15%;
+  z-index:10;
+  padding-top:20px;
+  padding-bottom:20px;
+  color:#fff;
+  text-align:center
+}
+

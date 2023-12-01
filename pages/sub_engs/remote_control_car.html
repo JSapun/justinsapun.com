@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Justin Sapun Remote Control Car
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!-- Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
+  <link href="../../assets/css/frame.css" media="screen" rel="stylesheet" type="text/css" /> <!-- Projects CSS -->
+</head>
+
+<body class="landing-page sidebar-collapse">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="300">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="../../index.html">
+          Home
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="../engineering_projects.html" class="nav-link"><i class="nc-icon nc-settings-gear-65"></i>Engineering Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="../meaningful_interests.html" class="nav-link"><i class="nc-icon nc-globe-2"></i> Meaningful Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#contact"><i class="nc-icon nc-circle-10"></i> Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Connect on LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/justinsapun/" target="_blank">
+              <i class="fa fa-linkedin-square"></i>
+              <p class="d-lg-none">LinkedIn</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Explore my GitHub" data-placement="bottom" href="https://github.com/JSapun" target="_blank">
+              <i class="fa fa-github-square"></i>
+              <p class="d-lg-none">GitHub</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Background Photo/Title -->
+  <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('../../assets/img/rear.jpg');">
+    <div class="filter"></div>
+    <div class="container">
+        <div class="motto text-center">
+          <h1>Remote Control Car</h1>
+        </div>
+      </div>
+  </div>
+  <!-- End Background Photo/Title -->
+  
+  <!-- Main -->
+  <div class="content">
+    <div class="content-table flex-column">
+        <!-- Authors -->
+        <div class="flex-row">
+            <div class="flex-item flex-column">
+                <img class="image" src="../../assets/img/me.jpg">
+            </div>
+            <div class="flex-item flex-column">
+                <p class="text text-large bolder">
+                <a target="_blank" href="https://justinsapun.com">Justin Sapun</a>, justin.sapun@dartmouth.edu<br>
+                <a target="_blank" href="https://github.com/Tozturk18">Tuna Ozturk</a>,  tuna.ozturk.ug@dartmouth.edu<br>
+                </p>
+            </div>
+        </div>
+        <!-- End Authors -->
+        <!-- Summary/Components -->
+        <div class="flex-row">
+            <div class="flex-item flex-column">
+                <h5 class="text add-top-margin-large bolder">
+                 The goal of this project was to design a remote control car using embedded systems programming in C. 
+                Although the initial product used an HTTP protocol for Adafruit's wireless dashboard, we switched to 
+                wireless transceivers to reduce response time to user input and create a separate controller that 
+                doesn't require an internet connection. A fair bit of electronics knowledge was required as well.</h5>
+
+                <h3 class="bolder"> Hardware Components</h3>
+                <ul>
+                    <li><p class="bolder">Arduino Uno (ATmega328p)</p></li>
+                    <li><p class="bolder">Adafruit Airlift Shield (esp32)</p></li>
+                    <li><p class="bolder">2 transceivers (nrf24l01)</p></li>
+                    <li><p class="bolder">2 - 9V DC motors</p></li>
+                    <li><p class="bolder">Adafruit DC motor breakout (Toshiba tb6612)</p></li>
+                    <li><p class="bolder">Linear voltage regulator (lm7805)</p></li>
+                    <li><p class="bolder">2 - white LEDs</p></li>
+                    <li><p class="bolder">2 - 4 digit 7segment displays with Adafruit LED breakout (Heltec ht16k33)</p></li>
+                    <li><p class="bolder">2 - 0.22uF capacitors</p></li>
+                    <li><p class="bolder">0.1 uF capacitor</p></li>
+                    <li><p class="bolder">2 - 9V batteries wired in series</p></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Summary/Components -->
+        <!-- Introduction -->
+        <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="bolder" id="introduction">Introduction</h2>
+              <hr>
+              <p class="text bolder">
+                The car itself isn't the highlight of the project, but the remote operation of it. As such, 
+                the car was assembled from a rough compilation of laser cutouts. The steering was handled in 
+                software as the car had independent motors for the rear axles, thus, giving us the option to 
+                only use one front wheel and no steering rack. The batteries were wired in series to give more 
+                current to the motors and prevent the Atmega chip from browning out. We included 3 de-coupling 
+                capacitors across 9V and ground, the linear voltage regulator, and the TB6612 to protect the ICs 
+                from noise that may affect their performance. We used a linear voltage regulator to supply a steady 
+                voltage to the motors simultaneously. The TB6612 utilizes the H-bridge circuit enabling us 
+                bidirectional motor driving. Our first implementation utilizes the Adafruit Airlift shield to 
+                communicate via WiFi to the Adafruit Internet of Things Dashboard service. Our second implementation 
+                utilizes transceivers on the car and on a separate controller to communicate via the 2.4 GHz band. 
+                For fun, we included headlights (white LEDs) and taillights (SevenSeg Displays).
+              </p>
+              <p class="text bolder">
+                This project required us to study datasheets, create drivers, develop wireless communications protocols, 
+                and finally construct a driving operation.  The project source code can be found on 
+                <a class="break-long-url" target="_blank" href="https://github.com/JSapun/ENGS28_Car"><b>Github</b>.</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Introduduction -->
+          <!-- Implementation -->
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="bolder" id="implementation"> Implementation</h2>
+              <hr>
+              <p class="text bolder">
+                We began by producing the necessary drivers for the following: tb6612, ht16k33, esp32, serial comm, 
+                and I2C comm. Building these drivers provided us with a standardized interface for software to access 
+                and control the hardware components while making the main code easily understandable. Note that to 
+                connect to Adafruit's Internet of Things, you need the network SSID and password, along with your own 
+                Adafruit account login. We used the Rest API over HTTP (the same protocol as regular web access). 
+                The framework consisted of HTML parsing for a single value from the Adafruit service. 
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-item flex-item-stretch flex-column">
+              <div class="flex-item flex-item-stretch flex-column">
+                <img class="image" src="../../assets/img/colorpicker.jpg">
+              </div>
+            </div>
+            <div class="flex-item flex-item-stretch flex-column">
+              <p class="text bolder">
+                As our protocol only allowed for a single 32-bit value, we had to figure out a way to query a combination of 
+                two variables: speed and direction. During our initial design stage, we wanted to replicate a joystick to simulate 
+                the forward, reverse, and side-to-side motion. The closet controller we could find on Adafruit's dashboard was a 
+                color picker. We realized this would work with our protocol constraint, as we could export the color as a single 
+                value. Now in order to operate the car, the color would need to be set to “|||||||||” to zero the initial 
+                components of the blue and green hues. Once this is done on the dashboard, the color wheel will replicate a 
+                joystick and the two variables will be represented by the blue and green color components.
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-item flex-item-stretch flex-column">
+              <video preload controls autoplay loop muted playsinline class="image">
+                <source src="../../assets/vids/demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="flex-item flex-item-stretch flex-column">
+              <p class="text bolder">
+                The video to the left is a quick demonstration of the car's functionality. As you can see we start by resetting the 
+                color wheel and then begin by increasing the car's speed in the forward direction. Ideally, the car should continue 
+                straight but that is not the case. We have concluded that because we used timer 1 and timer 2 onboard the atmega328p 
+                chip with different prescalers, the motors were not in sync when using PWM. As a result, we corrected this error in 
+                later developments by creating an offset. For the most part, the car still functioned as intended, able to operate 
+                remotely, turning left and right, or going in reverse. Note that we even included brake lights when the speed has been 
+                decreased. However, one thing we noticed right away was the 1 second delay from the Adafruit query.
+              </p>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <p class="text bolder">
+                To combat this issue, our next implementation was constructed using wireless communication on the 2.4GHz band using 
+                nrf24l01 transceivers. We built the driver in C and noticed the difference immediately. In addition, there was no single 
+                value constraint as we were able to send 8-bit arrays efficiently. Although we didn't have a joystick, this allowed the 
+                use of two potentiometers to signal speed and direction.
+              </p>
+            </div>
+          </div>
+          <!-- End Implementation -->
+          <!-- Skills -->
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="bolder" id="skills">Skills</h2>
+              <hr>
+              <p class="text bolder">
+                This project equipped me with the ability to create drivers for hardware components, program in embedded C, 
+                understand and implement basic electronics and circuitry, and develop comprehensive embedded systems. These 
+                skills empower me to create efficient and customized solutions for various applications in the field of embedded 
+                systems engineering.
+              </p>
+            </div>
+          </div>
+          <!-- End Skills -->
+        </div>
+    </div>
+    <!-- End Main -->
+
+    
+  <!--Foot Section-->
+  <footer class="footer   footer-white ">
+    <div class="container">
+      <div class="row">
+        <div class="credits ml-auto">
+          <span class="copyright">
+            ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, Justin Sapun
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!--   Core JS Files   -->
+  <script src="../../assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="../../assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="../../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="../../assets/js/plugins/moment.min.js"></script>
+  <script src="../../assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+  <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+  <script src="../../assets/js/paper-kit.js?v=2.2.0" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+</body>
+</html>
