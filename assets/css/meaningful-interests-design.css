@@ -1,8 +1,8 @@
 
 
 
-.container{position:relative;max-width:1200px;margin:0 auto}
-.container:before,.container:after{display:block;content:'';clear:both;height:0}
+.meaingful_container{position:relative;max-width:1200px;margin:0 auto}
+.meaingful_container:before,.meaingful_container:after{display:block;content:'';clear:both;height:0}
 .common-section{padding-top:100px;width:100%;margin:0 0;clear:both}
 .common-section:before,.common-section:after{display:block;content:'';clear:both;height:0}
 .common-section__header{padding-bottom:50px;text-align:center;float:left;width:98%;width:calc(100% - 40px);margin-left:1%;margin-right:1%;margin-left:calc(20px);margin-right:calc(20px);height:auto;margin-top:0;margin-bottom:0}
