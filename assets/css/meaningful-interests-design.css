@@ -13,8 +13,9 @@ h1,h2,h3,h4,h5,h6{font-weight:400}h1{color:#ecf0f1;font-size:60px;font-family:Ge
 .home-section{position:relative;width:100%;overflow:hidden}
 .home-section:after{content:"";position:absolute;left:0;bottom:0;display:block;width:100%;height:0;clear:both;-webkit-box-shadow:0 0 2px 1px #2c3e50;box-shadow:0 0 2px 1px #2c3e50}
 .home-section__bg_skiPatrol{position:absolute;min-width:100%;min-height:100%;z-index:0;background:url(../img/skiPatrolHeader.jpg) center 0 no-repeat;background-attachment:fixed;background-size:cover}
-.home-section__bg_woodworking{position:absolute;min-width:100%;min-height:100%;z-index:0;background:url(../img/coping_saw.jpg) center 0 no-repeat;background-attachment:fixed;background-size:cover}
+.home-section__bg_woodworking{position:absolute;min-width:100%;min-height:100%;z-index:0;background:url(../img/woodworking_header.JPG) center 0 no-repeat;background-attachment:fixed;background-size:cover}
 .home-section__bg_startResearch{position:absolute;min-width:100%;min-height:100%;z-index:0;background:url(../img/start_research_header.jpg) center 0 no-repeat;background-attachment:fixed;background-size:cover}
+.home-section__bg_predicting_gentrification{position:absolute;min-width:100%;min-height:100%;z-index:0;background:url(../img/predicting_gentrification_header.png) center 0 no-repeat;background-attachment:fixed;background-size:cover}
 .home-section__overlay{position:relative;width:100%;height:100%;min-height:100%;background-color:transparent;background-color:rgba(44,62,80,.3);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);zoom:1;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABSCAABFVgAADqXAAAXb9daH5AAAAAZSURBVHjaYmCAAGM0GjfHGEMGAAAA//8DACm0ATMe8beGAAAAAElFTkSuQmCC);background-repeat:repeat;background-attachment:fixed}
 .home-section__header{padding:200px 10px 400px;text-align:left}
 .home-section__header h1{margin-bottom:10px;font-size:100px;text-shadow:1px 1px 1px #2c3e50}
@@ -32,7 +33,7 @@ h1,h2,h3,h4,h5,h6{font-weight:400}h1{color:#ecf0f1;font-size:60px;font-family:Ge
 .about-card__info .about-card__info-status span{font-weight:700;text-transform:uppercase}
 
 /*Choose Me Section (Orange Box)*/
-.advantages{text-align:center;border-left:10px solid #ffa726;border-right:10px solid #ffa726;float:left;width:98%;width:calc(100% - 40px);margin-left:1%;margin-right:1%;margin-left:calc(20px);margin-right:calc(20px);height:auto;margin-top:0;margin-bottom:0;margin-top:50px}
+.advantages{text-align:center;border-left:10px solid #ffa726;border-right:10px solid #ffa726;float:left;width:98%;width:calc(100% - 40px);margin-left:1%;margin-right:1%;margin-left:calc(20px);margin-right:calc(20px);height:auto;margin-top:0;margin-bottom:0;margin-top:100px}
 .advantages h2{position:relative;margin-top:-15px}
 .advantages h2:before,.advantages h2:after{content:"";position:absolute;top:15px;display:block;width:30%;height:10px;background-color:#ffa726}
 .advantages h2:before{left:0}
@@ -45,7 +46,7 @@ h1,h2,h3,h4,h5,h6{font-weight:400}h1{color:#ecf0f1;font-size:60px;font-family:Ge
 .advantages blockquote cite{font-size:25px}
 
 /*Projects Section*/
-.common-section{padding-top:100px;width:100%;margin:0 0;clear:both}
+.common-section{padding-top:50px;width:100%;margin:0 0;clear:both}
 .common-section:before,.common-section:after{display:block;content:'';clear:both;height:0}
 .common-section__header{padding-bottom:50px;text-align:center;float:left;width:98%;width:calc(100% - 40px);margin-left:1%;margin-right:1%;margin-left:calc(20px);margin-right:calc(20px);height:auto;margin-top:0;margin-bottom:0}
 .common-section__header{padding-bottom:30px}h1{font-size:50px}h2{font-size:30px}h3{font-size:20px}h5{font-size:16px}p{font-size:16px}
@@ -71,7 +72,7 @@ h1,h2,h3,h4,h5,h6{font-weight:400}h1{color:#ecf0f1;font-size:60px;font-family:Ge
 .grid-container:before,.grid-container:after{display:block;content:'';clear:both;height:0}::selection{color:#ecf0f1;background-color:#bdc3c7}::-moz-selection{color:#ecf0f1;background-color:#bdc3c7}
 /*h1,h2,h3,h4,h5,h6{font-weight:400}h1{color:#ecf0f1;font-size:60px;font-family:Georgia,Times,"Times New Roman",serif}h2{font-family:Georgia,Times,"Times New Roman",serif;font-size:40px}h3{font-size:30px}h4{font-size:20px}h5{font-size:18px}p{font-size:18px}li p{font-family:Georgia,Times,"Times New Roman",serif;font-style:italic}a{color:#2c3e50;font-family:"Open Sans",Tahoma,Verdana,Arial,sans-serif;font-size:18px;text-decoration:none;outline-style:none;border-bottom:1px dashed #2c3e50}a:hover{border-bottom:none}*/
 
-.process{position:relative;list-style-type:none;float:left;width:98%;width:calc(100% - 40px);margin-left:1%;margin-right:1%;margin-left:calc(20px);margin-right:calc(20px);height:auto;margin-top:0;margin-bottom:0;height:500px}
+.process{position:relative;list-style-type:none;float:left;width:98%;width:calc(100% - 40px);margin-left:1%;margin-right:1%;margin-left:calc(20px);margin-right:calc(20px);height:auto;margin-top:0;margin-bottom:0;height:600px}
 .process:hover .process__step-icon.is-active{border-color:#dde4e6}
 .process:hover .process__step-icon.is-active:before{text-shadow:-1px -1px 0 #2c3e50,0 -1px 0 #2c3e50,1px -1px 0 #2c3e50,1px 0 0 #2c3e50,1px 1px 0 #2c3e50,0 1px 0 #2c3e50,-1px 1px 0 #2c3e50,-1px 0 0 #2c3e50}
 .process:hover .process__step-info{visibility:hidden}
