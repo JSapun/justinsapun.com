@@ -1,3 +1,9 @@
+/*
+ * Copyright 2023 Justin Sapun (http://www.justinsapun.com)
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
 // Gallary implementation
 // selecting all required elements
 const filterItem = document.querySelector(".items");
