@@ -92,8 +92,9 @@
                 <img class="image" src="../../assets/img/electricMotorcycleOld.jpg">
             </div>
             <div class="flex-item flex-column">
-                <p class="text text-large bolder">
-                <a target="_blank" href="https://justinsapun.com">Justin Sapun</a>, justin.sapun@dartmouth.edu<br>
+                <p class="text text-medium bolder">
+                <a target="" href="">Michael Dang</a>, michael.dang.ug@dartmouth.edu<br>
+                <a target="_blank" href="https://justinsapun.com">Justin Sapun</a>, justin.sapun.th@dartmouth.edu<br>
                 <a target="" href="">Mitchell Sylvia</a>, @Amherst.edu<br>
                 </p>
             </div>
@@ -102,6 +103,12 @@
         <!-- Summary/Components -->
           <div class="flex-row">
             <div class="flex-item flex-column">
+                <h5 class="text add-top-margin-large bolder">
+                  My main contribution to this project was a complete rewiring of the 12V low-voltage system to comply with safety standards.
+                  I also began the process of attaching components to the frame of the bike, namely the battery, controller, and charge port.
+                  I introduced a 3-speed function and variable regen with an LED display for its level. 
+                </h5>
+
                 <h3 class="bolder">Components</h3>
                 <ul>
                     <li><p class="bolder">1996 Suzuki ZX6R Frame</p></li>
@@ -115,13 +122,58 @@
             </div>
           </div>
         <!-- End Summary/Components -->
+         <!-- Recent Updates -->
+         <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="bolder" id="RecentUpdates"> Recent Updates - 08/01/2024</h2>
+            <hr>
+            
+          </div>
+        </div>
+        
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <div class="flex-item flex-item-stretch flex-column">
+              <img class="image" src="../../assets/img/12v_wire_harness_image.jpg">
+            </div>
+          </div>
+          <div class="flex-item flex-item-stretch flex-column">
+              <p class="text bolder">
+                As of now, I am happy to say that I was able to successfully implement the 3-speed function and the variable regen. 
+                The 3-speed function gives the rider the ability to restrict motor power, and for good reason. The variable regen 
+                works by using a 5k potentiometer on the dashboard paired with an LED multimeter display to show the current voltage. 
+                This gives the rider a 0-5V reading of the current regen level, with 5V being the strongest. The regen only works 
+                when the engine start button is held down. This was planned from the start to give the user the ability to coast 
+                without holding the throttle, unlike many electric car manufacturers. The 12V wiring harness is complete!
+              </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <div class="flex-item flex-item-stretch flex-column">
+              <img class="image" src="../../assets/img/battery_box_image.jpg">
+            </div>
+          </div>
+          <div class="flex-item flex-item-stretch flex-column">
+              <p class="text bolder">
+                The bracket for the battery assembly was welded, primed, and painted to the frame of the chassis, 
+                finally making room for progress. The controller will be mounted to the bottom right of the battery, 
+                and the DCDC to the interior left frame rail. This allows for optimal weight balancing and current 
+                wire configurations. The charge port will be mounted to the original seat key lock in the left rear. 
+                We attempted to complete the battery by dropping it into the aluminum container with good isolation 
+                methods, but we deemed it unsafe due to an isolation error before ultimately taking everything apart. 
+                To the left is a photo of the assembled battery. More isolation proofing is needed. The next steps 
+                include further isolating the battery box, mounting drivetrain components, and creating a custom dashboard.
+              </p>
+          </div>
+        </div>
         <!-- Recent Updates -->
           <div class="flex-row">
             <div class="flex-item flex-column">
-              <h2 class="bolder" id="RecentUpdates"> Recent Updates - 03/15/2024</h2>
+              <h2 class="bolder" id="RecentUpdates"> Update - 03/15/2024</h2>
               <hr>
               <p class="text bolder">
-                As of now, we managed to get the motor calibrated using the cosine and sine hall sensors. This allowed us to get the motor
+                We managed to get the motor calibrated using the cosine and sine hall sensors. This allowed us to get the motor
                 to finally spin using the 5k throttle potentiometer. The weeks prior, we had difficulties with setting up and operating the BMS.
                 The BMS is operational and includes unique designated charge and discharge buttons in the app. We have confirmed the battery
                 accepts charge with limited current set to 10 amps. We have one main contactor for HV+ which works great with the old engine
