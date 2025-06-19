@@ -1,0 +1,433 @@
+<!--
+
+ * Copyright 2025 Justin Sapun (http://www.justinsapun.com)
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Justin Sapun ASHP PETD
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <!-- Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
+  <link href="../../assets/css/frame.css" media="screen" rel="stylesheet" type="text/css" /> <!-- Projects CSS -->
+  <link href="../../assets/css/extra.css" rel="stylesheet" type="text/css" /> <!-- Extra -->
+</head>
+
+<body class="landing-page sidebar-collapse">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html">Home</a>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../engineering_projects.html">Engineering
+              Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="../meaningful_interests.html">Meaningful
+              Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Image -->
+  <div class="page-header page-header-xs" data-parallax="true"
+    style="background-image: url('../../assets/img/petd_background.jpg'); background-position: center 50%; background-size: 100%; height: 500px;">
+    <div class="filter"></div>
+    <div class="motto text-center">
+      <h1>Pulse Electrothermal Deicing Heat Pump</h1>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="content-table flex-column">
+
+      <!-- Authors -->
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image" src="../../assets/img/ashp_disassembly.jpg" alt="ASHP Disassembly">
+          </div>
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
+          <p class="text text-medium bolder">
+            <a target="_blank" href="https://justinsapun.com">Justin Sapun</a>,
+            justin.sapun.th@dartmouth.edu<br>
+            <a href="#">Madeleine Carr</a>, Madeleine.Carr.25@dartmouth.edu<br>
+            <a href="#">Abby Hughes</a>, abigail.hughes.25@dartmouth.edu<br>
+            <a href="#">Thea Kunzle</a>, Thea.E.Kunzle.25@dartmouth.edu<br>
+          </p>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h5 class="text add-top-margin-large bolder">
+            To improve the efficiency of air source heat pumps (ASHPs) in cold climates, our team explored
+            integrating pulse electrothermal de-icing (PETD) technology as an alternative to traditional
+            reverse cycle defrosting. We developed a series of electrical prototypes and tested them against
+            the performance of a full ASHP under natural icing conditions.
+          </h5>
+
+          <h3 class="bolder">Hardware & Test Components</h3>
+          <ul>
+            <li>Mitsubishi Hyper Heat ASHP (AOUG09LZAH1)</li>
+            <li>Eyedro Home Energy Monitor</li>
+            <li>Impeller anemometers and thermistors</li>
+            <li>Custom transformer + isolated variac</li>
+            <li>Triac-based switching circuit with optocoupler</li>
+            <li>Fluid loop using RV antifreeze</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Introduction -->
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <img class="image" src="../../assets/img/ashp_diagram.png">
+        </div>
+
+        <div class="flex-item flex-column">
+          <h2 class="bolder">Introduction</h2>
+          <hr>
+          <p class="text bolder">
+            Air source heat pumps (ASHPs) are an increasingly popular option for residential heating due to
+            their high efficiency and use of ambient air as a renewable energy source. However, in cold
+            climates, frost and ice buildup on the outdoor unit severely degrades performance, forcing the
+            system to periodically switch into reverse cycle defrost (RCD) mode. This interrupts heating,
+            consumes energy, and stresses the mechanical system.
+          </p>
+          <p class="text bolder">
+            Our goal was to address this limitation using Pulse Electrothermal De-icing (PETD), a patented
+            technology that removes ice via short bursts of high current. Unlike RCD, PETD aims to remove
+            frost without reversing the system and interrupting heating. This project explores whether PETD
+            can be effectively applied to ASHP condenser coils, a nontraditional surface for this
+            technology. The full report and presentation can be found below.
+          </p>
+          <div class="button-center">
+            <button type="button" onclick="window.open('../documents/ASHP_PETD_Report.pdf', '_blank');"
+              class="btn btn-outline-default btn-round">Full Report</button>
+            <button type="button" onclick="window.open('../documents/ASHP_PETD_Presentation.pdf', '_blank');"
+              class="btn btn-outline-primary btn-round">Presentation</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PETD Explanation -->
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <h2 class="bolder">What is PETD?</h2>
+          <hr>
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image" src="../../assets/img/petd_diagram.png">
+          </div>
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
+          <p class="text bolder">
+            Pulse Electrothermal De-icing (PETD) is a patented technology that removes ice using short,
+            high-power electrical pulses. These pulses generate intense localized heating at the interface
+            between the ice and the surface, melting just enough to break the bond — allowing gravity to
+            remove the ice.
+          </p>
+          <p class="text bolder">
+            Originally developed for smooth surfaces like airplane wings and power lines, PETD works by
+            exploiting ice's electrostatic adhesion. This project explores a novel application of PETD on
+            the complex surfaces of ASHP condenser coils, which introduces new electrical and thermal
+            challenges.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <video preload controls autoplay loop muted playsinline style="width: 480px; height: 270px;" class="image">
+            <source src="../../assets/vids/PETD.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
+          <p class="text bolder">
+            This video demonstrates how PETD pulses break the adhesion layer between ice and the test
+            surface. A thin water film forms almost instantly, allowing the ice to slide off with minimal
+            energy. This principle guided our hardware prototype design.
+          </p>
+        </div>
+      </div>
+
+      <!-- Testing Approach -->
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 class="bolder">Testing Approach</h2>
+          <hr>
+          <p class="text bolder">
+            To evaluate PETD's viability as a deicing method for ASHPs, our team divided the work into two
+            major tracks: <b>Control Testing</b> and <b>Prototype Testing</b>. This parallel design approach
+            allowed us to analyze both the baseline performance of a standard ASHP system and the
+            effectiveness of our PETD prototype under controlled and natural icing conditions.
+          </p>
+          <p class="text bolder">
+            The Control Testing team monitored ASHP behavior through thermistors and anemometers, measuring
+            CoP, airflow, and power usage during standard, partial, and full defrost cycles. The Prototype
+            Testing team focused on electrical safety, transformer performance, and de-icing behavior using
+            various PETD coil prototypes in a simulated cold environment.
+          </p>
+          <p class="text bolder">
+            By comparing energy consumption, deicing times, and thermal behavior across both test tracks,
+            we aimed to determine whether PETD can offer a meaningful efficiency advantage while maintaining
+            system safety and reliability.
+          </p>
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
+          <img class="image" src="../../assets/img/petd_process_diagram.png">
+        </div>
+      </div>
+
+      <!-- Control Testing -->
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <h2 class="bolder">Control Testing</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <p class="text bolder">
+            To understand the baseline performance of our ASHP system, we installed a Mitsubishi Hyper Heat
+            indoor and outdoor unit and ran tests during real winter conditions. We tracked temperature,
+            airflow velocity, and humidity at both the inlet and outlet using calibrated sensors. Power
+            consumption was recorded using an Eyedro energy monitor.
+          </p>
+          <p class="text bolder">
+            Our goal was to capture the system's behavior during standard heating, partial defrost, and full
+            defrost cycles to assess energy consumption, CoP, and how quickly the system could respond to
+            varying thermal loads.
+          </p>
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
+          <img class="image" src="../../assets/img/ashp_control_indoor.jpg" alt="Indoor ASHP Installation">
+        </div>
+      </div>
+
+      <!-- Prototype Testing -->
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 class="bolder">Prototype Testing</h2>
+          <hr class="full-width-hr">
+          <p class="text bolder">
+            While control testing focused on understanding ASHP baseline behavior, our prototype testing
+            centered around evaluating PETD’s ability to deliver high-power pulses safely and effectively to
+            a finned copper coil under icy conditions. We progressed through three major design stages, each
+            intended to improve power delivery, reduce parasitic resistance, and ensure safe handling of
+            high current.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <img class="image" src="../../assets/img/ashp_soldered_coil.jpg" alt="3D Printed Single Coil Prototype">
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
+          <h6>Soldered Wires</h6>
+          <p class="text bolder">
+            Our first prototype consisted of a single copper tube mounted in a 3D printed stand, with six 12
+            AWG wires soldered directly to the tube. Although functional, the design suffered from high
+            parasitic resistance in the wires and mechanical strain at the solder joints, limiting power
+            efficiency and raising thermal concerns during operation.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <img class="image" src="../../assets/img/ashp_brass_bus_bar.jpg" alt="Three Coil Brass Bar Prototype">
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
+          <h6>Brass Bus Bars</h6>
+          <p class="text bolder">
+            To address these limitations, we moved to a 3-length coil design with custom-fabricated brass
+            bus bars. These bars significantly reduced interface resistance and allowed us to clamp multiple
+            conductors securely. Although brass is less conductive than copper, its availability and
+            mechanical strength made it an effective intermediate solution for distributing current more
+            evenly across a longer coil.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <img class="image" src="../../assets/img/ashp_six_length.jpg" alt="Six Coil Copper Bus Prototype">
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
+          <h6>Copper Bus Bars</h6>
+          <p class="text bolder">
+            Finally, we developed a 6-length prototype using high-purity copper bus bars. These were
+            soldered and mechanically fastened directly to the transformer secondary terminals and the
+            full-length coil. This design offered the lowest resistive losses, greatest thermal uniformity,
+            and best alignment with PETD's theory of short, high-power pulses. It also brought us closest to
+            the real-world conditions of a full ASHP coil system. The header image shows the bus bar connection.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <p class="text bolder">
+            Driving these prototypes required delivering pulses of 110-120V AC at peak currents upwards of
+            15A. To accomplish this safely, we designed a custom power supply unit (PSU) capable of
+            switching AC pulses via a zero-cross triac circuit. The switching was controlled using an
+            opto-isolated MOC3062, which allowed us to decouple the microcontroller logic (5V) from the AC
+            load line. This ensured safety while allowing precise pulse timing control.
+          </p>
+
+          <p class="text bolder">
+            Our original design used an ATmega328P for pulse control, paired with a logic-controlled gate
+            for the triac trigger. We laid out and tested a dedicated PCB for the system, including heat
+            dissipation considerations and snubber protection. Our PCB design followed IPC clearance and
+            creepage guidelines for 240 AC mains. For field testing, however, we opted to use a commercial
+            variac and an off-the-shelf triac control module to reduce the risk of catastrophic failure and
+            to expedite testing outdoors. Below is the 3D model of our power supply with a custom PCB.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <video preload controls autoplay loop muted playsinline class="image">
+            <source src="../../assets/vids/ashp_psu.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 class="bolder">Results</h2>
+          <hr class="full-width-hr">
+          <p class="text bolder">
+            We tested three PETD coil configurations: 1, 3, and 6 lengths to evaluate heating response
+            and energy efficiency. The 6 length prototype performed best, deicing in just 2 minutes and 28
+            seconds with a total energy input of 283 Wh. In contrast, the 3 length design required 4:54
+            minutes and consumed 535 Wh, while the 1 length version took 6 minutes and used 363 Wh.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <p class="text bolder">
+            Extrapolating these results to full condenser coil operation, we estimated an average PETD
+            defrost cycle to consume around <b>0.432 kWh</b>. Under favorable conditions, this could drop to
+            <b>0.342 kWh</b>, while in heavier icing scenarios, energy use may rise to <b>0.613 kWh</b> per cycle.
+          </p>
+          <p class="text bolder">
+            Compared to reverse cycle defrost (RCD), which used <b>0.702 kWh</b> per cycle in our monitored
+            ASHP system, PETD offered up to a <b>39%</b> reduction in energy. Additionally, PETD avoids the
+            heating interruption that occurs during RCD, offering a more seamless and efficient defrost
+            strategy.
+          </p>
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
+          <img class="image" src="../../assets/img/ashp_full_setup.jpg" alt="Final Testbench Setup">
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <video preload muted autoplay loop playsinline controls class="image">
+            <source src="../../assets/vids/ashp_final_demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <p class="text bolder">
+            Due to many potential variables that could have influenced our experimental results such as
+            inconsistent weather, uneven ice formation, and sensor variability, our project did not provide
+            entirely conclusive results. However, the data we collected strongly supports further
+            investigation. With more controlled testing, PETD could prove to be a highly effective and
+            scalable defrost solution. If validated, this technology has the potential to reduce energy
+            usage globally in heat pump systems.
+          </p>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="flex-row">
+        <div class="flex-item flex-column">
+          <h2 class="bolder" id="skills">Skills</h2>
+          <hr>
+          <p class="text bolder">
+            This project strengthened our abilities in high-power circuit design and embedded C programming
+            for real-time control. We developed and tested triac-based power switching circuits,
+            characterized custom transformers, and designed multiple PETD prototypes for high-current
+            applications. Additional skills included PCB design, 3D modeling and fabrication for coil
+            fixtures, microcontroller integration, and detailed performance modeling based on heat transfer
+            and icing theory. We also implemented HVAC monitoring instrumentation and performed CoP
+            calculations to compare PETD and reverse-cycle performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Foot Section-->
+  <footer class="footer   footer-white ">
+    <div class="container">
+      <div class="row">
+        <div class="credits ml-auto">
+          <span class="copyright">
+            ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, Justin Sapun
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!--   Core JS Files   -->
+  <script src="../../assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="../../assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="../../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="../../assets/js/plugins/moment.min.js"></script>
+  <script src="../../assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+  <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+  <script src="../../assets/js/paper-kit.js?v=2.2.0" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+</body>
+
+</html>
