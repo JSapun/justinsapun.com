@@ -1,0 +1,262 @@
+<!--
+
+ * Copyright 2023 Justin Sapun (http://www.justinsapun.com)
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Justin Sapun MicroMouse
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!-- Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
+  <link href="../../assets/css/frame.css" media="screen" rel="stylesheet" type="text/css" /> <!-- Projects CSS -->
+  <link href="../../assets/css/extra.css" rel="stylesheet" type="text/css" /> <!-- Extra -->
+</head>
+
+<body class="landing-page sidebar-collapse">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="300">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="../../index.html">
+          Home
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="../engineering_projects.html" class="nav-link"><i class="nc-icon nc-settings-gear-65"></i>Engineering Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="../meaningful_interests.html" class="nav-link"><i class="nc-icon nc-globe-2"></i> Meaningful Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#contact"><i class="nc-icon nc-circle-10"></i> Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Connect on LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/justinsapun/" target="_blank">
+              <i class="fa fa-linkedin-square"></i>
+              <p class="d-lg-none">LinkedIn</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Explore my GitHub" data-placement="bottom" href="https://github.com/JSapun" target="_blank">
+              <i class="fa fa-github-square"></i>
+              <p class="d-lg-none">GitHub</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Background Photo/Title -->
+<div class="page-header page-header-xs" data-parallax="true"
+    style="background-image: url('../../assets/img/micromouse_header.jpg'); background-position: center 70%; background-size: 100%; height: 350px;">
+    <div class="filter"></div>
+    <div class="motto text-center">
+      <h1>MicroMouse</h1>
+    </div>
+  </div>
+  </div>
+  <!-- End Background Photo/Title -->
+  
+  <!-- Main -->
+  <div class="content">
+    <div class="content-table flex-column">
+        <!-- Authors -->
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image" src="../../assets/img/micromouse_mouse.png" alt="ASHP Disassembly">
+          </div>
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
+          <p class="text text-medium bolder">
+            <a target="_blank" href="https://justinsapun.com">Justin Sapun</a>,
+            justin.sapun.th@dartmouth.edu<br>
+            <a href="#">Chingpheng Phoun</a>, Chingpheng.Phoun.th@dartmouth.edu<br>
+            <a href="#">Vuthy Vey</a>, Vuthy.Vey.th@dartmouth.edu<br>
+          </p>
+        </div>
+      </div>
+        <!-- End Authors -->
+
+        <!-- Summary/Components -->
+        <div class="flex-row">
+            <div class="flex-item flex-column">
+                <h5 class="text add-top-margin-large bolder">
+  Micromouse is a fast-paced engineering challenge requiring a robot to autonomously navigate a 16x16 maze as efficiently as possible. Our team designed, built, and programmed a two wheeled robot from scratch, integrating custom hardware, realtime sensor feedback, path finding algorithms, and control logic. Throughout the term, we iterated on mechanical design, tuned control loops, and debugged navigation behavior to achieve reliable maze solving performance.
+</h5>
+
+                <h3 class="bolder">Necessary Components</h3>
+<ul>
+  <li><p class="bolder">Arduino Due microcontroller</p></li>
+  <li><p class="bolder">Two N20 motors with encoders</p></li>
+  <li><p class="bolder">Adafruit VL53L0X ToF sensors for wall detection</p></li>
+  <li><p class="bolder">MPU6050 IMU for orientation sensing</p></li>
+  <li><p class="bolder">Pololu DRV8833 motor driver</p></li>
+  <li><p class="bolder">LiPo battery and voltage regulator</p></li>
+  <li><p class="bolder">LEDs and pushbuttons for debugging</p></li>
+  <li><p class="bolder">Custom 3D printed chassis</p></li>
+</ul>
+
+            </div>
+        </div>
+        <!-- End Summary/Components -->
+          <!-- Implementation -->
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="bolder" id="implementation">Implementation</h2>
+              <hr>
+               <p class="text bolder">
+      Our Micromouse system was structured around a finite state machine with three major states: search, return, and race. During the search phase, the robot explores the maze, updating its internal map and making decisions using the floodfill algorithm. In the return state, the robot retraces its learned path back to the start, and in the final race state, it executes the shortest path to the center at higher speeds. These states govern all motion and sensing logic. The Arduino Due serves as the central controller, integrating data from Adafruit ToF distance sensors and an IMU for environment sensing, and reading wheel encoders for odometry. This data feeds into a control loop that uses PI-based turning and velocity controllers. Motor commands are output through dual H bridge drivers, allowing for precise realtime control. All components work in tandem to support accurate wall detection, localization, and fast, efficient maze traversal.
+    </p>
+              <br />
+
+              <div class="button-center">
+  <button type="button" onclick="window.open('../documents/micromouse_presentation.pdf', '_blank');" class="btn btn-outline-default btn-round">Presentation</button>
+  <button type="button" onclick="window.open('https://github.com/JSapun/Micromouse', '_blank');" class="btn btn-outline-primary btn-round">Code</button>
+  <button type="button" onclick="window.open('https://github.com/JSapun/Micromouse/tree/main/matlab', '_blank');" class="btn btn-outline-primary btn-round">Matlab</button>
+</div>
+
+              <br />
+            </div>
+          </div>
+          <div class="flex-row">
+  <div class="flex-item flex-item-stretch flex-column">
+    <div class="flex-item flex-item-stretch flex-column">
+      <img class="image" src="../../assets/img/micromouse_control_velocity.png">
+    </div>
+  </div>
+  <div class="flex-item flex-item-stretch flex-column">
+    <h6>Velocity Control</h6>
+    <p class="text bolder">
+      Our velocity controller maintained a target speed as the mouse traveled through straight corridors. We used wheel encoders for feedback and implemented a lead compensator with an underlying PI to provide both responsiveness and steady state accuracy. The controller adjusted PWM outputs to the motors in realtime, enabling smooth acceleration and deceleration based on high level movement commands.
+    </p>
+  </div>
+</div>
+
+<div class="flex-row">
+  <div class="flex-item flex-item-stretch flex-column">
+    <div class="flex-item flex-item-stretch flex-column">
+      <img class="image" src="../../assets/img/micromouse_control_wall.png">
+    </div>
+  </div>
+  <div class="flex-item flex-item-stretch flex-column">
+    <h6>Forward-to-Wall Control</h6>
+    <p class="text bolder">
+      To approach walls precisely, we again implemented a PI + lead controller using distance measurements from the front-facing ToF sensor. This allowed the mouse to decelerate as it neared the target stopping distance, minimizing overshoot and ensuring consistent stopping behavior. The controller was especially useful during exploration when the mouse encountered unknown walls or needed to pause before making a turn.
+    </p>
+  </div>
+</div>
+
+<div class="flex-row">
+  <div class="flex-item flex-item-stretch flex-column">
+    <div class="flex-item flex-item-stretch flex-column">
+      <img class="image" src="../../assets/img/micromouse_control_turn.png">
+    </div>
+  </div>
+  <div class="flex-item flex-item-stretch flex-column">
+    <h6>Turn Control</h6>
+    <p class="text bolder">
+      Turns were executed using a simple PI controller acting on yaw data from the IMU. The controller compared the current heading to the desired heading and adjusted the motor speeds to complete in-place or arc turns. By focusing on angular velocity and orientation error, this system achieved consistent 90° turns critical for navigating tight maze corners.
+    </p>
+  </div>
+</div>
+
+          
+          <div class="flex-row">
+  <div class="flex-item flex-item-stretch flex-column">
+    <video preload controls autoplay loop muted playsinline class="image">
+      <source src="../../assets/vids/first_demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="flex-item flex-item-stretch flex-column">
+    <h6>Floodfill Solving Algorithm</h6>
+    <p class="text bolder">
+      Floodfill is the dominant pathfinding algorithm in Micromouse due to its efficiency and simplicity. It assigns a numerical "cost" to each maze cell based on its distance from the goal. At every decision point, the mouse chooses the neighboring cell with the lowest cost, naturally guiding it toward the center.
+      <br><br>
+      We implemented our own floodfill algorithm in C++, maintaining and updating a cost map in real time as new walls were discovered. Each wall sensor update triggered a recalculation of the grid, allowing the mouse to dynamically explore and refine its path. During the final race, the mouse retraced the fastest known path using the updated cost map.
+      <br><br>
+      To test the algorithm, we simulated multiple maze configurations and validated that the mouse always reached the center and back with optimal moves. The video here shows one of short successful runs, the video begins as the mouse is finishing the first exploratory phase.
+    </p>
+  </div>
+</div>
+
+          <!-- End Implementation -->
+
+          <!-- Skills -->
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="bolder" id="skills">Skills</h2>
+              <hr>
+              <p class="text bolder">
+      This project strengthened our skills in embedded C++ programming, digital control implementation, and sensor integration. We gained experience in debugging under hardware constraints, applying control theory, and using 3D design tools to optimize the robot's layout for sensing and maneuverability.
+    </p>
+            </div>
+          </div>
+          <!-- End Skills -->
+        </div>
+    </div>
+    <!-- End Main -->
+
+    
+  <!--Foot Section-->
+  <footer class="footer   footer-white ">
+    <div class="container">
+      <div class="row">
+        <div class="credits ml-auto">
+          <span class="copyright">
+            ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, Justin Sapun
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!--   Core JS Files   -->
+  <script src="../../assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="../../assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="../../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="../../assets/js/plugins/moment.min.js"></script>
+  <script src="../../assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+  <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+  <script src="../../assets/js/paper-kit.js?v=2.2.0" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+</body>
+</html>
