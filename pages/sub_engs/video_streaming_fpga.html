@@ -1,0 +1,285 @@
+<!--
+
+ * Copyright 2023 Justin Sapun (http://www.justinsapun.com)
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Justin Sapun FPGA Video Streaming
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!-- Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
+  <link href="../../assets/css/frame.css" media="screen" rel="stylesheet" type="text/css" /> <!-- Projects CSS -->
+  <link href="../../assets/css/extra.css" rel="stylesheet" type="text/css" /> <!-- Extra -->
+</head>
+
+<body class="landing-page sidebar-collapse">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="300">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="../../index.html">
+          Home
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a href="../engineering_projects.html" class="nav-link"><i class="nc-icon nc-settings-gear-65"></i>Engineering Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="../meaningful_interests.html" class="nav-link"><i class="nc-icon nc-globe-2"></i> Meaningful Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#contact"><i class="nc-icon nc-circle-10"></i> Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Connect on LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/justinsapun/" target="_blank">
+              <i class="fa fa-linkedin-square"></i>
+              <p class="d-lg-none">LinkedIn</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Explore my GitHub" data-placement="bottom" href="https://github.com/JSapun" target="_blank">
+              <i class="fa fa-github-square"></i>
+              <p class="d-lg-none">GitHub</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Background Photo/Title -->
+<div class="page-header page-header-xs" data-parallax="true"
+    style="background-image: url('../../assets/img/fpga_video_header.png'); background-position: center 60%; background-size: 100%; height: 350px;">
+    <div class="filter"></div>
+    <div class="motto text-center">
+      <h1>FPGA Video Streaming</h1>
+    </div>
+  </div>
+  </div>
+  <!-- End Background Photo/Title -->
+  
+  <!-- Main -->
+  <div class="content">
+    <div class="content-table flex-column">
+        <!-- Authors -->
+      <div class="flex-row">
+        <div class="flex-item flex-item-stretch flex-column">
+          <div class="flex-item flex-item-stretch flex-column">
+            <img class="image" src="../../assets/img/fpga_video_zybo_board.avif" alt="ASHP Disassembly">
+          </div>
+        </div>
+        <div class="flex-item flex-item-stretch flex-column">
+          <p class="text text-medium bolder">
+            <a target="_blank" href="https://justinsapun.com">Justin Sapun</a>,
+            justin.sapun.th@dartmouth.edu<br>
+            <a href="#">Arun Guruswamy</a>, Arun.Guruswamy.th@dartmouth.edu<br>
+          </p>
+        </div>
+      </div>
+        <!-- End Authors -->
+
+        <!-- Summary/Components -->
+<div class="flex-row">
+  <div class="flex-item flex-column">
+    <h5 class="text add-top-margin-large bolder">
+      This project implements a realtime audio analysis and video synthesis system using the Zybo Z7-10 FPGA. Audio is streamed from either the onboard I2S codec or a Direct Digital Synthesis (DDS) module, then processed using a Fast Fourier Transform (FFT) pipeline to extract frequency-domain features. These features are used to drive HDMI video effects, enabling dynamic visual output that responds to audio input. The design is built entirely with AXI-Stream and AXI-Lite interfaces, using Xilinx IP and custom VHDL components.
+    </h5>
+
+    <h3 class="bolder">Design Components</h3>
+    <ul>
+      <li><p class="bolder">Zybo Z7-10 FPGA development board</p></li>
+      <li><p class="bolder">I2S Audio Codec (ADAU1761)</p></li>
+      <li><p class="bolder">Direct Digital Synthesis (DDS) module</p></li>
+      <li><p class="bolder">FFT core for real time spectral analysis</p></li>
+      <li><p class="bolder">AXI4-Stream and AXI4-Lite interfaces</p></li>
+      <li><p class="bolder">HDMI timing and video output modules</p></li>
+      <li><p class="bolder">Onboard switches and buttons for mode control</p></li>
+      <li><p class="bolder">Custom VHDL logic and AXI wrappers</p></li>
+    </ul>
+  </div>
+</div>
+
+        <!-- End Summary/Components -->
+          <!-- Implementation -->
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="bolder" id="implementation">Implementation</h2>
+              <hr>
+               <p class="text bolder">
+  We structured the system around modular VHDL components, each with isolated responsibilities for audio buffering, FFT analysis, and video transformation. Careful coordination between the audio and video clock domains was key to maintaining synchronization. Debugging involved both simulation and hardware tools like the ILA, which helped uncover subtle issues like timing polarity mismatches and spectral leakage early in the integration process.
+</p>
+              <br />
+
+              <div class="button-center">
+  <button type="button" onclick="window.open('../documents/fpga_video_streaming_report.pdf', '_blank');" class="btn btn-outline-default btn-round">Final Report</button>
+  <button type="button" onclick="window.open('https://github.com/arun-guruswamy/128-final-prj', '_blank');" class="btn btn-outline-primary btn-round">Github</button>
+</div>
+
+              <br />
+            </div>
+          </div>
+          <div class="flex-row">
+  <div class="flex-item flex-item-stretch flex-column">
+    <div class="flex-item flex-item-stretch flex-column">
+      <img class="image" src="../../assets/img/fpga_video_generation.png">
+    </div>
+  </div>
+  <div class="flex-item flex-item-stretch flex-column">
+    <h6>Video Generation</h6>
+    <p class="text bolder">
+  To generate visuals on the HDMI display, we built a pixel generator synchronized with a Video Timing Controller and pixel clock. This module dynamically created scenery including a moving square by tracking the current x and y pixel coordinates. Color was applied to pixels falling within the bounds of the square, while other areas remained black. A simple FSM updated the square's position each frame, and we layered in basic background elements like a tree and grass to test spatial rendering. This provided a foundation for later transformation based on audio input.
+</p>
+  </div>
+</div>
+
+<div class="flex-row">
+  <div class="flex-item flex-item-stretch flex-column">
+    <div class="flex-item flex-item-stretch flex-column">
+      <img class="image" src="../../assets/img/fpga_video_transform_fsm.png">
+    </div>
+  </div>
+  <div class="flex-item flex-item-stretch flex-column">
+    <h6>Video Transform</h6>
+<p class="text bolder">
+  This part of the system handles realtime audio driven video effects. Audio samples from either I2S or DDS are streamed into a custom AXI FIFO buffer (`axis_fifo.vhd`), where 512 samples are collected at 48kHz and windowed using a Hanning function. These samples are sent in bursts to a pipelined FFT IP core operating at 100MHz. The FFT output is parsed by `fft_axi_rx.vhd`, which calculates the magnitude squared of each bin and identifies the peak frequency. This bin index is sent to the `rgb_transform.vhd` module, which scans each pixel and modifies the color of designated moving objects based on the dominant frequency. A preloaded colormap stored in BRAM links frequency bins to RGB values, enabling dynamic, audio responsive visuals on the HDMI output.
+    <br><br>
+  The paper design to the left is only the logic for the pixel change in video_transform.vhd post FFT processing.
+</p>
+
+  </div>
+</div>
+
+<div class="flex-row">
+  <div class="flex-item flex-item-stretch flex-column">
+    <div class="flex-item flex-item-stretch flex-column">
+      <img class="image" src="../../assets/img/fpga_video_final_block.png">
+    </div>
+  </div>
+  <div class="flex-item flex-item-stretch flex-column">
+    <h6>System Integration</h6>
+    <p class="text bolder">
+  All major components were combined into a single top-level design to complete the full audio-to-video processing pipeline. The final block diagram includes the I2S/DDS audio input, AXI FIFO for buffering, FFT IP core, frequency analysis logic, and video generation and transformation modules. Control inputs like mute and source select were wired through AXI-Lite, and synchronization between domains was managed using separate audio and video clocks. This fully integrated system enabled realtime HDMI output that reacts dynamically to audio signals in hardware.
+</p>
+  </div>
+</div>
+
+<div class="flex-row">
+  <div class="flex-item flex-item-stretch flex-column">
+    <div class="flex-item flex-item-stretch flex-column">
+      <img class="image" src="../../assets/img/fpga_video_final_testbench.png">
+    </div>
+  </div>
+  <div class="flex-item flex-item-stretch flex-column">
+    <h6>System Verification</h6>
+    <p class="text bolder">
+  Throughout development, we created individual testbenches for each module to verify functionality in isolation. This final testbench simulated the complete integrated system, including audio input, FFT processing, and video transformation. Due to the slow 48kHz audio clock, simulation runtime was long, but the testbench successfully validated end-to-end behavior and allowed us to proceed confidently with hardware testing.
+</p>
+  </div>
+</div>
+
+          
+          <div class="flex-row">
+  <div class="flex-item flex-item-stretch flex-column">
+    <video preload controls autoplay loop muted playsinline class="image">
+      <source src="../../assets/vids/fpga_video_demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="flex-item flex-item-stretch flex-column">
+    <h6>Demo</h6>
+    <p class="text bolder">
+  In the demo video, we play a YouTube sweep tone from 0Hz to 20kHz. The system tracks the dominant frequency in realtime, changing the color of the moving square on screen as the detected peak bin shifts with the audio.
+</p>
+  </div>
+</div>
+
+        <div class="flex-row">
+            <div class="flex-item flex-item-stretch flex-column">
+              <br>
+              <h6>Considerations</h6>
+              <p class="text bolder">
+  While the system architecture worked as intended, the FFT output introduced unexpected challenges during implementation. Spectral leakage caused instability in peak frequency detection, leading to rapid color shifts on screen. To address this, we applied a Hanning window to the buffered audio samples before FFT processing. This reduced but did not fully eliminate the effect, highlighting the nuance of realtime signal analysis in hardware.
+</p>
+            </div>
+          </div>
+          <!-- End Implementation -->
+
+          
+
+          <!-- Skills -->
+          <div class="flex-row">
+            <div class="flex-item flex-column">
+              <h2 class="bolder" id="skills">Skills</h2>
+              <hr>
+              <p class="text bolder">
+  We gained experience in VHDL design, AXI-Stream and AXI-Lite protocols, FFT-based audio processing, and HDMI video synchronization. The project involved clock domain management, simulation with custom testbenches, and debugging using Vivado and the Integrated Logic Analyzer (ILA). We also applied windowing techniques to reduce spectral leakage in real-time signal analysis.
+</p>
+
+            </div>
+          </div>
+          <!-- End Skills -->
+        </div>
+    </div>
+    <!-- End Main -->
+
+    
+  <!--Foot Section-->
+  <footer class="footer   footer-white ">
+    <div class="container">
+      <div class="row">
+        <div class="credits ml-auto">
+          <span class="copyright">
+            ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, Justin Sapun
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!--   Core JS Files   -->
+  <script src="../../assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="../../assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="../../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="../../assets/js/plugins/moment.min.js"></script>
+  <script src="../../assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+  <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+  <script src="../../assets/js/paper-kit.js?v=2.2.0" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+</body>
+</html>
