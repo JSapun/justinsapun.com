@@ -88,7 +88,7 @@
         <h1>Welcome</h1>
         <h3>Check out my personal portfolio!</h3>
         <br />
-        <a href="./pages/documents/web_resume_7-10-2025.pdf" class="btn btn-outline-neutral btn-round"
+        <a href="./pages/documents/web_resume_11-07-2025.pdf" class="btn btn-outline-neutral btn-round"
           target="_blank">Resume</a>
       </div>
     </div>
@@ -111,13 +111,16 @@
             <div class="section-title mb-0 ml-lg-5 ml-md-3">
               <h2 class="title text-primary mb-3">Justin Sapun</h4>
                 <h6 class="designation mb-3">I'm a Passionate <span class="text-primary">Engineer</span></h6>
-                <p class="text-muted">I'm Justin, an undergraduate at the Thayer School of Engineering at Dartmouth
-                  College and Bard College. I'll have two bachelors by 20, one in computer engineering and one in
-                  computer science. With a background in circuits, robotics and software development, I’ve contributed
-                  to many mechatronic engineering projects like an electric motorcycle conversion to an electric race
-                  car. Beyond the classroom, I'm fueled by a constant need to learn and thrive on independent study.
-                  Currently, I'm delving into using deep learning and computer vision to predict gentrification in New
-                  Jersey. When not immersed in work, you can usually find me playing volleyball.</p>
+                <p class="text-muted">
+                  I’m Justin, a graduate of Dartmouth College and Bard College with dual degrees in Computer Engineering
+                  and Computer Science. My work bridges software, data, and hardware, and I’m motivated by building
+                  systems that have measurable impact in the real world.
+                  I’ve led projects spanning embedded systems, power electronics, and full-stack software. From
+                  developing a wireless power platform for electric motorbikes at Nucular Tech to creating
+                  machine learning pipelines that predict gentrification trends across New Jersey. Whether working on a
+                  application or a data model, I focus on delivering reliable, scalable solutions that solve meaningful
+                  problems. I’m driven to learn, build, and explore new ideas, thriving on independence and
+                  self-direction — it’s how I continue to grow as an engineer and as a person.</p>
                 <p class="text-muted">I've always believed that everyone can help change the world, and with technology
                   improving exponentially, I would like to do my part by finding ways to help overcome some of the
                   challenges people face.</p>
@@ -137,8 +140,38 @@
             <br>
           </div>
         </div>
+        <!-- Nucular Tech + DALI Lab -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info">
+              <div class="icon icon-danger">
+                <img src="./assets/img/nucular_tech.jpg" class="img-rounded img-responsive" alt="...">
+              </div>
+              <div class="description">
+                <h4 class="info-title">Nucular Tech</h4>
+                <h6 class="info-title">Embedded Software Engineer</h6>
+                <p>Leading development of a 15 W wireless power system for rim lighting effects on electric motorbikes,
+                  integrating embedded control, power electronics, and communication interfaces. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info">
+              <div class="icon icon-danger">
+                <img src="./assets/img/cabinet_myself2_cut.png" class="img-rounded img-responsive" alt="...">
+              </div>
+              <div class="description">
+                <h4 class="info-title">DALI Lab</h4>
+                <h6 class="info-title">Software Engineer</h6>
+                <p>Developed a wearable sensor system to help detect femoral nerve palsy in infants with DDH (Pavlik
+                  harness), using accelerometers and gyroscopes for medical analysis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <br />
         <br />
+        <!-- EG + DFR -->
         <div class="row">
           <div class="col-md-6">
             <div class="info">
@@ -171,6 +204,43 @@
       </div>
     </div>
     <!--Expierence End-->
+
+    <!--Senior Design Project Start-->
+    <div class="section text-center" style="background-color:#f4f3ef;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="title">Senior Design Project</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="./assets/img/petd_background.jpg" class="img-rounded img-responsive" alt="ASHP PETD Project">
+          </div>
+          <div class="col-md-6 text-left">
+            <h4 class="info-title text-primary">Air Source Heat Pump with Pulse Electrothermal Deicing (PETD)</h4>
+            <p class="text-muted">
+              For my senior design project, our team spent 6 months developing and testing a pulse electrothermal
+              deicing (PETD)
+              system to improve air source heat pump (ASHP) performance in cold climates. The goal was to reduce
+              inefficiencies caused by frost buildup by integrating PETD technology to melt ice without interrupting
+              heating cycles. We designed triac based switching circuits, custom coils, and transformer systems to
+              deliver high power pulses safely under real icing conditions. Testing showed that our PETD integrated ASHP
+              reduced defrosting energy use by up to <strong>39%</strong> compared to the industry standard!
+            </p>
+            <a href="./pages/sub_engs/ASHP_PETD_deicing.html" class="btn btn-danger btn-round" target="_blank">Read
+              More</a>
+            <a href="https://justinsapun.com/pages/documents/ASHP_PETD_Report.pdf"
+              class="btn btn-outline-default btn-round" target="_blank">Full Report</a>
+            <a href="https://justinsapun.com/pages/documents/ASHP_PETD_Presentation.pdf"
+              class="btn btn-outline-primary btn-round" target="_blank">Presentation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Senior Design Project End-->
+
 
     <!--Recent Projects Start-->
     <div class="section text-center">
@@ -279,11 +349,13 @@
                   </div>
                   <div class="carousel-item">
                     <div>
-                      <img class="d-block img-fluid" src="./assets/img/predicting_gentrification_gallery.png" alt="Third slide">
+                      <img class="d-block img-fluid" src="./assets/img/predicting_gentrification_gallery.png"
+                        alt="Third slide">
                     </div>
                     <div class="galleryButton">
                       <button onclick="window.location.href = './pages/sub_interests/predicting_gentrification.html';"
-                        type="button" class="btn btn-default btn-round">Machine Learning and Data Analysis for Predicting Gentrification</button>
+                        type="button" class="btn btn-default btn-round">Machine Learning and Data Analysis for
+                        Predicting Gentrification</button>
                     </div>
                   </div>
                 </div>
